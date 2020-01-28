@@ -16,7 +16,6 @@
 - 최솟값이 8보다 크면 -1을 return 합니다.
 
 ## Answer CODE
-- Java script 다른 사람 코드 참조한 코드
 ```python
 from collections import defaultdict
 
