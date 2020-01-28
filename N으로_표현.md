@@ -17,6 +17,7 @@
 
 ## Answer CODE
 ```javascript
+# java script
 function solution(N, number) {
     const dp = new Array(9).fill(0).map(v=>[]);
     const cnt = []
@@ -42,6 +43,7 @@ function solution(N, number) {
 }
 ```
 ```python
+# python
 from collections import defaultdict
 
 def arithmetic(formula, cnt, arr, i):
