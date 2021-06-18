@@ -2,6 +2,18 @@
 가장 동전을 많이 얻을 경로 찾기
 - Beam Search로 풀기
 """
+
+# ====================
+# Test case 생성 source
+import numpy as np
+
+
+N, M = (4, 5)
+tile = np.random.randint(-10, 50, size=(N, M))
+tile[tile < 0] = 0
+tile = tile.tolist()
+# ====================
+
 TestCase = {
     "case1": {
         "answer": 24000,
