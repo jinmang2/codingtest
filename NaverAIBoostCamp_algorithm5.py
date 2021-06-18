@@ -4,11 +4,11 @@
 """
 TestCase = {
     "case1": {
-        "answer": 240,
+        "answer": 24000,
         "tile": [[27, 47, 31, 33, 5],
                  [17,  0, 33, 43, 0],
                  [36, 49,  0, 27, 0],
-                 [44, 32, 10, 32, 0]]
+                 [44, 32, 10, 32, 0]],
     }
 }
 
@@ -26,4 +26,4 @@ def solution(tile):
             if c_ind < M - 1:
                 new_states.append((score + tile[r_ind][c_ind+1], r_ind, c_ind + 1))
         states = sorted(new_states, reverse=True)[:beam_size]
-    return states[0][0] # Max score
+    return states[0][0] * 100 # Max score
